@@ -1,5 +1,8 @@
 # Ignore all
 *
 
-# but
+# but these files...
 !*.java
+
+# even if they are in subdirs.
+!*/
