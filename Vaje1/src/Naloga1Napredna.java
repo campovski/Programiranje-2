@@ -1,8 +1,10 @@
+// Idea: Use method delitelji to compute divisors. Since we are working with sets
+// and order is not important, we can restrict our search to $\sqrt{n}$ and add
+// both $i$ and $n/i$ in same run.
 
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Iterator;
-
 
 public class Naloga1Napredna {
 	public static Set<Integer> delitelji(Integer n){

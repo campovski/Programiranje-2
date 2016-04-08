@@ -1,3 +1,5 @@
+// Idea: Read the file you want and count number of spaces in a line.
+// Number of words in a line is number of spaces plus 1. Iterate over all lines.
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

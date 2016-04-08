@@ -1,3 +1,6 @@
+// Idea: Try every integer not greater then $n$ if it divides $n$. If so, print it.
+// We cannot restrict search to not greater then $\sqrt{n}$, since we must print them
+// ordered from lowest to highest.
 
 public class Naloga1 {
 	public static void main(String[] args){

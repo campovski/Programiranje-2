@@ -1,3 +1,6 @@
+// Idea: Convert to common units, compute average velocity and if greater then
+// SPEED_LIMIT print to file and increase the count of maniacs by 1.
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

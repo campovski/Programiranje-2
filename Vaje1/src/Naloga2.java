@@ -1,3 +1,6 @@
+// Idea: We start with 2 and divide $n$ as long as we can with 2. 'eksponent' counts
+// how many times the division was done. Then we add 2^eksponent to 'rezultat' and repeat
+// the described process with 3, then 4 etc. At the end, we must add the last number as well!
 
 public class Naloga2 {
 	public static void main(String[] args){

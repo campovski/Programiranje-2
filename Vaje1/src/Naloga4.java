@@ -1,3 +1,5 @@
+// Idea: Simple matrix multiplication. Every $r_{ij}$ of result 'rezultat' is
+// computed as scalar product if $i$-th row of $a$ and $j$-th row of $b$.
 
 public class Naloga4 {
 	public static double[][] zmnozi(double[][] a, double[][] b){
@@ -23,8 +25,9 @@ public class Naloga4 {
 		
 		for (int row = 0; row < rezultat.length; row++){
 			for (int col = 0; col < rezultat[0].length; col++){
-				System.out.println(rezultat[row][col]);
+				System.out.print(rezultat[row][col] + " ");
 			}
+			System.out.print("\n");
 		}
 	}
 }
