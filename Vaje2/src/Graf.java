@@ -19,7 +19,7 @@ public class Graf {
 	// Povezavo dodamo tako, da najprej preverimo, ali graf vsebuje obe krajisci;
 	// ce ju, dodamo povezavo tako, da jo dodamo v obe smeri.
 	public void dodajPovezavo(Integer v, Integer u){
-		if (graf.containsKey(v) && graf.containsKey(u)){
+		if (v != u && graf.containsKey(v) && graf.containsKey(u)){
 			graf.get(v).add(u);
 			graf.get(u).add(v);
 		}
