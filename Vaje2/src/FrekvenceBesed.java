@@ -26,8 +26,9 @@ public class FrekvenceBesed {
 		izhod.close();
 	}
 	
-	// Iz vsake vrstice vhodne datoteke pobrisemo nezeljene znake, navedene v vrstici 30.
-	// Nato vsako besedo, ce je se ni v slovarju, dodamo vanj. Drugace le povecamo stevec.
+	// Iz vsake vrstice vhodne datoteke pobrisemo nezeljene znake, navedene v vrstici 38
+	// (pri konstrukciji StringTokenizerja). Nato vsako besedo, ce je se ni v slovarju,
+	// dodamo vanj. Drugace le povecamo stevec.
 	private static Map<String, Integer> prestejPojavitve(String imeDat) throws IOException{
 		BufferedReader vhod = new BufferedReader(new FileReader(imeDat));
 		Map<String, Integer> slovarPojavitev = new HashMap<String, Integer>();
@@ -51,7 +52,7 @@ public class FrekvenceBesed {
 	// Kljuce uredimo tako, da si definiramo svojo compare metodo, ki bo urejala po
 	// vrednostih (value). Ko smo uredili slovar, prepisemo kljuce v list kljuci.
 	// Opomba: Ce zelimo sortirati v obratnem vrstnem redu, zamenjamo vnos1 in vnos2
-	// v vrstici 53.
+	// v vrstici 61 (return vnos2.getValue...).
 	private static List<String> urediKljuce(Map<String, Integer> map){
 		List<Map.Entry<String, Integer>> list = new LinkedList<Map.Entry<String, Integer>>(map.entrySet());
 		Collections.sort(list, new Comparator<Map.Entry<String, Integer>>(){
