@@ -111,11 +111,12 @@ public class Graf {
 	}
 	
 	// Alternativna (lepsa) resitev, ki preveri, ali je stevilo komponent enako 1.
+	// Opomba: Ta implementacija je pocasnejsa, saj moramo najprej poiskati vse
+	// komponente grafa, medtem ko metoda povezan vrne false takoj, ko najde
+	// drugo komponento. Metoda povezan2 deluje v \Omega(n) = \Theta(n) = O(n),
+	// metoda povezan pa v O(n).
 	public boolean povezan2(){
-		if (this.steviloKomponent2() == 1){
-			return true;
-		}
-		return false;
+		return this.steviloKomponent2() == 1;
 	}
 	
 	// Alternativna (lepsa) resitev, ki naredi kompozicijo grafa in vrne moc kompozicije.
